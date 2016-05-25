@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html>
+<head>
+	<title>Caesar</title>
+	<meta charset="UTF-8" />
+	<link href="css/headers.css" rel="stylesheet" type="text/css"/>
+	<link href="css/main.css" rel="stylesheet" type="text/css"/>
+	<link href="css/drawer.css" rel="stylesheet" type="text/css"/>
+	<link href="css/gaia-icons-embedded.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+
+	<section data-type="sidebar">
+		<header>
+			<menu type="toolbar">
+				<a href="#content"><span data-icon="back" class="icon icon-back">back</span></a>
+			</menu>
+			<h1>Options</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="Caesar.html"><img src="images/C.png" height="25" width="25" alt="Caesar.html"/>Caesar cipher</a></li>
+				<li><a href="Vigni.html"><img src="images/V.png" height="25" width="25" alt="Vigni.html"/>Vigniere cipher</a></li>
+				<li><a href="extra.html"><img src="images/extras.png" height="40" width="60" alt="extra.html"/>Extras</a></li>
+				<li><a href="index.html"><img src="images/home.png" height="25" width="25" alt="index.html"/>Home</a></li>
+				<li><a href="contact.html"><img src="images/contact.png" height="25" width="25" alt=" "/>Contact</a></li>
+			</ul>
+		</nav>
+	</section>
+	<section id="drawer" role="region">
+	  <header>
+		<a href="#content"><span class="icon icon-close">hide sidebar</span></a>
+		<a href="#drawer"><span class="icon icon-add">show sidebar</span></a>
+	  </header>
+	  <div id="main" role="main">
+		<div class="content">
+            <svg viewBox="0 0 1400 300">
+
+                <!-- Symbol -->
+                <symbol id="s-text">
+                    <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+                        Ncrypt
+                    </text>
+                </symbol>
+
+                <!-- Duplicate symbols -->
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+
+            </svg>
+    </div>
+				<table>
+					<tr>
+						<td><a href="Caesar.html"><img id="Caesar" class="circle" src="images/circle1.gif" height="100" width="100" alt=""/></a></td>
+						<td><a href="Vigni.html"><img id="Vigni" class="circle" src="images/circle2.gif" height="100" width="100" alt=""/></a></td>
+					</tr>
+				</table>
+		</div>
+	</section>
+</body>
+</html>

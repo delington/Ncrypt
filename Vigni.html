@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+			<title>Vigni</title>
+			<meta charset="UTF-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+			<link href="css/headers.css" rel="stylesheet" type="text/css" />
+			<link href="css/drawer.css" rel="stylesheet" type="text/css" />
+			
+			<link href="css/app.css" rel="stylesheet" type="text/css" />
+			<link href="css/input_areas.css" rel="stylesheet" type="text/css" />
+			<link href="css/buttons.css" rel="stylesheet" type="text/css" />
+			
+			<link href="css/gaia-icons-embedded.css" rel="stylesheet" type="text/css"/>
+			<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+			<link rel="stylesheet" type="text/css" href="css/demo.css" />
+			<link rel="stylesheet" type="text/css" href="css/style.css" />
+			<script type="text/javascript" src="js/vigni.js"></script>
+    </head>
+    
+    <body onload="window.location = 'Vigni.html#';">
+        <div>
+        <section data-type="sidebar">
+					<header>
+						<menu type="toolbar">
+							<a href="#content"><span data-icon="back" class="icon icon-back">back</span></a>
+						</menu>
+						<h1>Options</h1>
+					</header>
+					<nav>
+						<ul>
+							<li><a href="Caesar.html"><img src="images/C.png" height="25" width="25" alt="Caesar.html"/>Caesar cipher</a></li>
+							<li><a href="Vigni.html"><img src="images/V.png" height="25" width="25" alt="Vigni.html"/>Vigniere cipher</a></li>
+							<li><a href="extra.html"><img src="images/extras.png" height="40" width="60" alt="extra.html"/>Extras</a></li>
+							<li><a href="index.html"><img src="images/home.png" height="25" width="25" alt="index.html"/>Home</a></li>
+							<li><a href="contact.html"><img src="images/contact.png" height="25" width="25" alt=" "/>Contact</a></li>
+						</ul>
+					</nav>
+				</section>
+                
+				<section id="drawer" role="region">
+						<header>
+										<a href="#content"><span class="icon icon-menu">hide sidebar</span></a>
+										<a href="#drawer"><span class="icon icon-menu">show sidebar</span></a>
+										<h1>Vigniere</h1>
+						</header>
+						
+						<div role="main">
+							<form>
+								<input type="text" id="text" placeholder="Type your encryptible text here" />
+								<input type="text" id="key" style="width: 45%; display: inline;" placeholder="Insert the key" />
+								<span style="color: black;">Is decrypt?</span>
+								<input type="checkbox" id="isDecrypt" />
+
+								<button id="OkButton" class="recommend" onclick="doCrypt()">Do it!</button>
+								<p>
+								<button style="width: 45%; background-color: darkGreen; border-radius: 0px;" id="ClearButton"
+								class="recommend" onclick="window.location = 'Vigni.html';">Clear it!</button>
+								</p>
+							</form>
+						</div>
+				</section>
+        </div>
+    </body>
+</html>
