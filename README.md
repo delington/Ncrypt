@@ -1,2 +1,2 @@
 # Ncrypt
-Encryption application
+Encryption application for Firefox OS (School project)
